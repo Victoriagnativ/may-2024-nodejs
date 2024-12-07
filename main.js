@@ -1,19 +1,28 @@
-// const {foo} = require('./helpers/helper')
-//
-// console.log('_______________main.js____________');
-// console.log(__dirname);
-// console.log(__filename);
-// console.log(process.cwd());
-// foo();
-const readline = require('node:readline');
+const http = require('node:http');
 const foo = async ()=>{
-    const rlInstance = readline.createInterface({
-        input:process.stdin,
-        output:process.stdout
-    })
-    rlInstance.question('What is your name?',(name)=>{
-        console.log(`Hello ${name}`)
-        rlInstance.close();
-    })
+
+    const server = http.createServer((req, res) => {
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        const url= req.url;
+        if(url === '/about'){
+          return  res.end(JSON.stringify({
+                data: 'About Page!',
+            }));
+
+        }
+        if(url === '/contest'){
+            return   res.end(JSON.stringify({
+                data: 'Contest Page!',
+            }));
+
+        }
+        if(url === '/'){
+        return res.end(JSON.stringify({
+            data: 'Hello World!',
+        }));
+        }
+    });
+
+    server.listen(8000);
 }
 void foo();

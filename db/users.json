@@ -25,15 +25,9 @@
   },
   {
     "id": 5,
-    "name": "Dima",
-    "email": "taper@gmail.com",
-    "password": "rtt443"
-  },
-  {
-    "id": 6,
-    "name": "Rita",
-    "email": "torpeda@gmail.com",
-    "password": "vcx344"
+    "name": "Ooopka",
+    "email": "vika@gmail.com",
+    "password": "qwe123ne8595004"
   },
   {
     "id": 7,
@@ -76,5 +70,17 @@
     "name": "Olla",
     "email": "vika@gmail.com",
     "password": "qwe1okp23"
+  },
+  {
+    "id": 15,
+    "name": "Sergy",
+    "email": "BigBSergey@gmail.com",
+    "password": "ccc3xf595904"
+  },
+  {
+    "id": 16,
+    "name": "Sonask",
+    "email": "BigBSergey@gmail.com",
+    "password": "ccc3xf595904"
   }
 ]
